@@ -57,8 +57,7 @@ result.html → Displays classification result
 
 Clone the repository
 
-git clone https://github.com/your-username/sms-spam-classifier.git
-cd sms-spam-classifier
+https://github.com/Aanushkabhor/SMS_spam_detectio
 
 
 Install dependencies
