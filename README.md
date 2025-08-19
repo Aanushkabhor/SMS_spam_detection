@@ -57,7 +57,7 @@ result.html → Displays classification result
 
 Clone the repository
 
-https://github.com/Aanushkabhor/SMS_spam_detectio
+https://github.com/Aanushkabhor/SMS_spam_detection
 
 
 Install dependencies
