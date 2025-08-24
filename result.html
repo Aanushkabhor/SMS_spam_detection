@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 20px; /* Bigger font */
+            background-color: #f9f9f9;
+        }
+        .container {
+            text-align: center;
+            padding: 20px 30px;
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .spam {
+            color: red;
+            font-weight: bold;
+        }
+        .ham {
+            color: green;
+            font-weight: bold;
+        }
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #4CAF50;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>📊 Result</h2>
+        <p><strong>Message:</strong> {{ message }}</p>
+        
+        <!-- Conditional color for prediction -->
+        <p>
+            <strong>ham/spam:</strong> 
+            {% if prediction == 'spam' %}
+                <span class="spam">{{ prediction }}</span>
+            {% else %}
+                <span class="ham">{{ prediction }}</span>
+            {% endif %}
+        </p>
+        
+        <a href="/">🔙 Try another</a>
+    </div>
+</body>
+</html>
+
