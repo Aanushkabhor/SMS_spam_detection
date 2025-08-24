@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SMS Spam Classifier</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full height */
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 18px; /* Bigger font */
+            background-color: #f9f9f9;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        textarea {
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            width: 100%;
+            max-width: 400px;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 8px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>📩 SMS Spam Classifier</h2>
+        <form action="/predict" method="post">
+            <textarea name="message" rows="5" cols="40" placeholder="Enter SMS message here"></textarea><br><br>
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
+
